@@ -1,0 +1,15 @@
+苹果服务	https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+谷歌服务	https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Google.png
+电报消息	https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Telegram_01.png
+Spotify	https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+人工智能	https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT3.png
+大陆抖音	https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Tiktok_06.png
+海外抖音	https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
+兜底策略	https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+香港节点	https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+台湾节点	https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/tw.png
+美国节点	https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+日本节点	https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+韩国节点	https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+狮城节点	https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+回家专线	https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Category_News.png

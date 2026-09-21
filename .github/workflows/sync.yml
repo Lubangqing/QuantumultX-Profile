@@ -1,0 +1,63 @@
+name: Sync mirrors
+
+# 每天把上游（fmz200 / blackmatrix7 / zqzess / chavyleung / KOP-XIAO 等）
+# 重新拉取 → 转成 QX 语法 → 提交回本仓库。
+# QX 端只要把资源的 update-interval 设为 86400，就会自动跟上，PC 不用开机。
+
+on:
+  schedule:
+    - cron: '23 18 * * *'      # UTC 18:23 = 北京时间 02:23
+  workflow_dispatch:            # 也可手动触发
+
+permissions:
+  contents: write               # 需要写权限才能 commit（仓库设置里要允许）
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          # 说明：push 需要 contents: write。
+          #  · 若仓库默认 GITHUB_TOKEN 是「Read and write」（个人仓库默认），下面这行自动用默认 token，无需任何设置；
+          #  · 若找不到 Settings → Actions → General → Workflow permissions（或默认是只读），
+          #    就建一个细粒度 PAT（只勾 Contents: Read and write）存为仓库 secret，名字叫 PAT —— 下面这行会自动优先用它。
+          token: ${{ secrets.PAT || github.token }}
+
+      - name: 同步上游并转换（生成 snippets/ scripts/ icons/ data/）
+        shell: pwsh
+        run: ./tools/build-local.ps1
+
+      - name: 刷新本地模式配置（QuanX.conf，含 MITM 主机名重算）
+        shell: pwsh
+        run: ./tools/apply-local-conf.ps1
+
+      - name: 生成自建仓库远程模式（selfhost/snippets + QuanX.selfhost.conf）
+        shell: pwsh
+        run: ./tools/make-selfhost.ps1 -Base "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}"
+
+      - name: 提交变更
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "上游无变化，跳过提交"
+            exit 0
+          fi
+          git add -A
+          git commit -m "chore: sync upstream mirrors ($(date -u +%Y-%m-%d))"
+          git push
+
+      - name: 摘要
+        run: |
+          echo "### 本次同步" >> $GITHUB_STEP_SUMMARY
+          echo "| 目录 | 文件数 |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
+          for d in snippets selfhost/snippets scripts icons data; do
+            [ -d "$d" ] && echo "| $d | $(find $d -type f | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          done

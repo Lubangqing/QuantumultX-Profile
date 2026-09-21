@@ -1,0 +1,119 @@
+# #!name=获取cookie&token合集
+# #!desc=顺序尽量放到上面，获取到以后禁用该配置避免重复大量的MITM
+# #!author=奶思
+# #!homepage=https://github.com/fmz200/wool_scripts
+# #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png
+# #!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/rewrite/cookies.snippet
+# #!tg-channel=https://t.me/inaisi
+# #!category=奶思的模块
+# #!tag = 奶思
+# #!system = iOS, iPadOS
+# #!system_version =
+# #!loon_version =
+# #!date=2025-07-20 09:50:00
+hostname = mobile-consumer-sapp.chery.cn, xxyx-client-api.xiaoxiaoyouxuan.com, yunbusiness.ccb.com, home.m.jd.com, api.m.jd.com, ms.jr.jd.com, jdread-api.jd.com, me-api.jd.com, wq.jd.com, daojia.jd.com, farm.api.ddxq.mobi, user-api.smzdm.com, luka-graphql.ling.cn, fmapp.chinafamilymart.com.cn, apph5.manmanbuy.com, www.hifini.com, cauth.pupuapi.com, qqpet.jwetech.com, rewards.bing.com, auth.alipan.com, auth.aliyundrive.com, draw.jdfcloud.com, api.momosyb.com, passport.iqiyi.com, account.huami.com, api.dongqiudi.com, act.10010.com, wox2019.woxshare.com, www.52pojie.cn, api.prize.qq.com, eventv3.reader.qq.com, api.tuhu.cn, gameapi.hellobike.com, xiaoshuo.qm989.com, passport.biligame.com, cxdng.cpic.com.cn, teacherapi.zmlearn.com, luckman.suning.com, api.dushu.io, api.xiaoheihe.cn, api.inews.qq.com, zt.wps.cn, m.client.10010.com, m.ctrp.com, activity.m.duiba.com.cn, as.xiaojukeji.com, www.maomicd.com, h5.youzan.com, node.kg.qq.com, manga.bilibili.com, ios.baertt.com, www.mydigit.cn, proxy.vac.qq.com, wx-mini.pagoda.com.cn, *.acfun.cn, *.rrys2019.com, *.bilibili.com, club.yili.com, marketappapi.biyao.com, commontgw6.reader.qq.com, *.ctrp.com, *.csdn.net, www.duokan.com, ngabbs.com, note.youdao.com, h5.bianlifeng.com, kd.youth.cn, activity-1.m.duiba.com.cn, cloud.umetrip.com, hongbao.youzikuaibao.com, air.tb.ele.me, *.xmcimg.com, m.ctrip.com, user.qunar.com, mcs-mimp-web.sf-express.com, tb.ele.me, dominos0724.shjimang.com, h5.ele.me, my.ruanmei.com, promotion.waimai.meituan.com, www.2xtj7.cn, mall.oclean.com, apk.tw, user-api-prd-mx.wandafilm.com, *.youth.cn, wq.02gk.com, iphone.myzaker.com, apiwz.midukanshu.com, api.1sapp.com, nebula.kuaishou.com, yuba.douyu.com, *.ximalaya.com, *.zhuishushenqi.com, sf-integral-sign-in.weixinjia.net, epassport.diditaxi.com.cn, *.m.163.com, e.dlife.cn, open.e.189.cn, e.189.cn, wapside.189.cn, api.kkmh.com, *.rr.tv, gameapi.suning.com, *.you.163.com, app.oscaches.com, exp.angelalign.com, getconfig-globalapi.zymk.cn, mall.meituan.com, game.xiaojukeji.com, api.infzm.com, *.v2ex.com, *.rrys2020.com, app.nio.com, music.163.com, studygolang.com, kandian.wkandian.com, ifac*.iqiyi.com, ug-fission.kuaishou.com, passport.suning.com, tncj.hortorgames.com, credits.bz.mgtv.com, c.tieba.baidu.com, api.sdbao.com, 113.96.156.178, wxavip-up.ezrpro.cn, *.video.qq.com, j1.pupuapi.com, tieba.baidu.com, wx.17u.cn, www.baimaa.com, frodo.douban.com, m-bean.kaola.com, 110.43.90.61, newsapi.sina.cn, i.meituan.com, wxprdapplet.gac-nio.com, icbc1.wlphp.com:8444, ios-fenqu11.lxsjgo.com, sapi.beingfine.cn, *.feng.com, www.hnmiaosu.cc, clientaccess.10086.cn, mobile.app.autohome.com.cn, ph0001.hezyq.com, api.everphoto.cn, api-takumi.mihoyo.com, sports.lifesense.com, superapp.kiwa-tech.com, api.weather.com, sign.suning.com, qqpet.jwetech.com, m.elong.com, webapi.qmai.cn, mwegame.qq.com, activity.m.kuaishou.com, mobwsa.ximalaya.com, proapi.115.com, youhui.95516.com, www.xiaodouzhuan.cn, *.smzdm.com, app.ymatou.com, operation-api.jimistore.com, www.flyert.com.cn, api.cashtoutiao.com, choujiang-server.deering.cn, maicai.api.ddxq.mobi, minigame.zijieapi.com, appsmall.rtmap.com, m.gdoil.cn, *.weibo.cn, *.weibo.com, weibo.com, ios.zmzapi.com
+^https:\/\/api\-new\.app\.acfun\.cn\/rest\/app\/user\/personalInfo url script-request-header chavyleung-acfun.cookie.js
+^https://apk.tw\/member.php(.*?)action=login url script-request-body chavyleung-apktw.cookie.js
+^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token url script-request-body aliyun.js
+^https:\/\/auth.aliyundrive.com\/v2\/account\/token url script-response-body lowking-aliYunPanCheckIn.js
+^https:\/\/passport\.iqiyi\.com\/apis\/user\/ url script-request-header NobyDa-iQIYI.js
+^https:\/\/rewards\.bing\.com url script-request-header lowking-bingPoint.js
+https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login url script-request-header NobyDa-TieBa.js
+;^https://group\.baicizhan\.com/group/rewards? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/bcz/bcz.cookie.js
+^https:\/\/passport\.biligame\.com\/api\/login\/sso.+?version%22%3A%22(3|4|5) url script-request-header NobyDa-Manga.js
+https:\/\/api.bilibili.com\/x\/vip\/privilege\/receive url script-request-header lowking-privilegeReceive.js
+https?:\/\/app.bilibili.com\/x\/v2\/space\/bangumi url script-request-header lowking-bangumiMonitor.js
+^https:\/\/(www|live)\.bilibili\.com\/?.? url script-request-header chavyleung-bilibili.cookie.js
+^https:\/\/passport.csdn.net\/v2\/api\/app\/login\/checkAndRefreshToken url script-request-header chavyleung-csdn.cookie.js
+^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\? url script-request-header chavyleung-csdn.cookie.js
+^https?:\/\/api.weather\.com url script-request-header Peng-YM-caiyun.js
+^https?:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/newWatering\? url script-request-body fmz200-get_cookie.js
+^https:\/\/epassport\.diditaxi\.com\.cn\/passport\/login\/v5\/signInByOpenid url script-response-body fmz200-get_cookie.js
+^https://minigame.zijieapi.com/ttgame/game_orchard_ecom/polling_info url script-request-header LinYuanovo-dygy.js
+^https://yuba.douyu.com/wbapi/web/group/myFollow? url script-request-header lowking-yubaSign.js
+^https:\/\/api\.dongqiudi\.com\/v2\/user\/is_login url script-request-header chavyleung-dongqiudi.cookie.js
+;^https:\/\/fro\.douban\.com\/api\/v2\/niffler\/check_in\/status url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/dbsj/dbsj.cookie.js
+https:\/\/maicai\.api\.ddxq\.mobi\/user\/checkLogin url script-request-header iepngs-index.js
+https:\/\/farm\.api\.ddxq\.mobi\/api\/v2\/props\/feed url script-request-header iepngs-ddgy.js
+;^https?:\/\/air\.tb\.ele\.me\/app\/conch-page\/svip-foodie-card\/home url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
+;^https?:\/\/air\.tb\.ele\.me\/app\/conch-page\/svip-home-tasklist-new\/home url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
+;^https?:\/\/tb\.ele\.me\/wow\/alsc\/mod url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
+;^https?:\/\/h5\.ele\.me\/restapi\/biz\.svip_scene\/svip\/engine\/queryTrafficSupply url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
+^https?:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=getdata&.* url script-request-header zirawell-flyert-aaa9e5.js
+^https://api\.dushu\.io/CheckIn url script-request-body chavyleung-fandeng.cookie.js
+;^https:\/\/geekhub\.com\/checkins\/start url script-request-header https://raw.githubusercontent.com/id77/QuantumultX/master/task/geekhub.cookie.js
+https:\/\/www.hifini.com\/my.htm url script-request-header lowking-hifiniSign.js
+^https:\/\/wxprdapplet\.gac-nio\.com\/community\/userSignIn\/simpleAuth\/front\/v3\.1\.3\.5\/signV2$ url script-request-header chavyleung-hycan.cookie.js
+^https:\/\/home\.m\.jd\.com\/myJd\/(newhome|home)\.action url script-request-header fmz200-jd_cookie.js
+^https:\/\/jdread-api\.jd\.com\/* url script-request-header XidNDD-jddsSign.js
+^https:\/\/daojia.jd.com/client(.*?)functionId=signin(.*?)userSigninNew url script-request-body chavyleung-jddj.cookie.js
+^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) url script-request-body FoKit-jhsh_checkIn.js
+^http?:\/\/hongbao\.youzikuaibao\.com\/youzi\/* url script-request-body XidNDD-yzkbSign.js
+^https:\/\/m.gdoil.cn\/webapi\/usersign\/addusersign url script-request-header chavyleung-gdoil.cookie.js
+^https://ug-fission.kuaishou.com/rest/n/darwin/orchard/water/watering url script-request-header fmz200-ks_getCookie.js
+^https:\/\/api\.kkmh\.com\/v\d\/passport\/user url script-request-header NobyDa-KKMH.js
+^https?:\/\/luka\-graphql\.ling\.cn\/graphql\/mobile\?operation=UserInfoWithPendingRobotQuery url script-request-header blackmatrix7-luka_signin.js
+https://open.meituan.com/user/v1/info/auditting url script-response-body fmz200-get_cookie.js
+;https://open.meituan.com/user/v1/info/audit url script-request-header fmz200-get_cookie.js
+https://gaea.meituan.com/mapi/usercenter url script-request-header fmz200-get_cookie.js
+;^https?:\/\/mall\.meituan\.com\/api\/c\/mallcoin\/checkIn\/getWeekCheckInProgressBar\? url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/meituan/maicai_checkin.js
+^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/(entry|doaction) url script-request-header chavyleung-wmmeituan.cookie.js
+^https:\/\/credits.bz.mgtv.com\/user\/creditsTake url script-request-header chavyleung-mgtv.cookie.js
+^https:\/\/api-takumi.mihoyo.com\/apihub\/api\/getGameList url script-request-header chavyleung-mihoyo.cookie.js
+https:\/\/www.maomicd.com\/plugin.php\?id=k_misign:sign&operation=qiandao url script-request-header chavyleung-maomicd.cookie.js
+^https:\/\/ngabbs.com\/nuke.php\?? url script-request-body chouchoui-nga.cookie.js
+https://m.pinduoduo.net/proxy/api/api/server/_stm url script-request-header fmz200-pdd_getToken.js
+https:\/\/cauth.pupuapi.com\/clientauth\/user\/verify_login url script-request-header lowking-pupuCheckIn.js
+https:\/\/proxy\.vac\.qq\.com\/cgi-bin\/srfentry.fcgi? url script-request-header lowking-qqVipCheckIn.js
+https:\/\/qqpet.jwetech.com\/api\/authorizations url script-response-body lowking-lkQQPet.js
+^https:\/\/mobile\.app\.autohome\.com\.cn\/fasthome\/* url script-request-body XidNDD-qczjSign.js
+^http:\/\/mobile\.app\.autohome\.com\.cn\/fasthome\/coin\/* url script-request-body XidNDD-qczjSign.js
+^https:\/\/user.qunar.com\/webapi\/member\/signIndexV2.htm url script-request-header chavyleung-qunar.cookie.js
+^https://node\.kg\.qq\.com/webapp/proxy? url script-request-body chavyleung-qmkg.cookie.js
+^https:\/\/mobile-consumer-sapp\.chery\.cn\/web\/user\/current\/details\? url script-response-body fmz200-get_cookie.js
+^https:\/\/user-api\.smzdm\.com\/users\/info url script-request-header fmz200-get_cookie.js
+^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect url script-request-header fmz200-get_cookie.js
+^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/app\/shareRedirect url script-request-header fmz200-get_cookie.js
+^https:\/\/api\.sdbao\.com\/* url script-request-body XidNDD-sdcbxscSign.js
+^http:\/\/app\.oscaches\.com\/* url script-request-body XidNDD-sjdjSign.js
+^https:\/\/api.everphoto.cn\/users\/self\/checkin\/v2 url script-request-header chavyleung-everphoto.cookie.js
+^https:\/\/passport.suning.com\/ids\/login$ url script-request-body chavyleung-suning.cookie.js
+^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do url script-request-header chavyleung-suning.cookie.js
+^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do url script-request-header chavyleung-suning.cookie.js
+^https:\/\/gameapi.suning.com\/sngame-web\/(api\/signin\/private\/customerSignOperation.do|gateway\/api\/queryPrize.do) url script-request-header chavyleung-suning.cookie.js
+;^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$ url script-request-header https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/testflight/TF_keys.js
+;^https://testflight.apple.com/join/(.*) url script-request-header https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/testflight/TF_keys.js
+^https:\/\/cxdng\.cpic\.com\.cn\/taieshop\/api\/CustomerFansInfo\/GetFansInfo url script-request-header id77-thg.cookie.js
+^https:\/\/operation-api\.jimistore\.com\/* url script-request-body XidNDD-ttwbxcxSign.js
+^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header chavyleung-videoqq.cookie.js
+^https:\/\/www\.v2ex\.com\/mission\/daily url script-request-header chavyleung-v2ex.cookie.js
+^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list url script-request-header chavyleung-wps.cookie.js
+^https:\/\/m?api\.weibo\.c(n|om)\/\d\/users\/show url script-request-header fmz200-get_cookie.js
+^https:\/\/api\.weibo\.cn\/\d\/users\/show url script-request-header FoKit-weibo_sign.js
+^https:\/\/api\.weibo\.cn\/2\/logservice\/attach url script-request-header FoKit-weibo_sign.js
+^https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/i\.huati\.weibo\.com\/aj\/super\/checkin url script-request-header lowking-weiboSTCookie.js
+^https://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) url script-request-header toulanboy-weibotalk.cookie.js
+https:\/\/www\.52pojie\.cn\/home\.php\? url script-request-header NobyDa-52pojie.js
+;^https:\/\/huiyuan\.163\.com\/jf\-mall\-api\/api\/sign_up\/(lucky|normal) url script-request-header https://raw.githubusercontent.com/id77/QuantumultX/master/task/163GameVip.cookie.js
+^https:\/\/music.163.com\/weapi\/user\/level url script-request-body chavyleung-neteasemusic.cookie.js
+^https:\/\/(.*?)c\.m\.163\.com\/uc\/api\/sign\/v3\/commit url script-request-body chavyleung-neteasenews.cookie.js
+^https:\/\/m-bean\.kaola\.com/m/point/sign\.html url script-request-body chavyleung-wykl.cookie.js
+^https:\/\/api\.momosyb\.com\/(v6|v1)\/(fans|user)\/* url script-request-body XidNDD-wsxqSign.js
+^https:\/\/app\.nio\.com\/api\/1\/app\/daily_checkin url script-request-header chavyleung-nio.cookie.js
+;^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/xiaomiSports/xmSports.js
+^https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo url script-request-header barrym-chen-ctrip_cookie.js
+^https?:\/\/.*\/mobile\-user\/(v1\/)?homePage\/.* url script-request-header chavyleung-ximalaya.cookie.js
+^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/my url script-response-body fmz200-get_cookie.js
+https:\/\/club\.yili\.com\/MALLIFChe\/MCSWSIAPI\.asmx\/Call url script-request-body id77-yiLi.cookie.js
+^https:\/\/(e\.189\.cn\/store\/user|open\.e\.189\.cn\/api\/logbox\/oauth2\/loginSubmit\.do) url script-request-header FoKit-get_10000_cookie.js
+^https:\/\/wapside\.189\.cn:9001\/api\/home\/sign url script-request-body chavyleung-10000.cookie.js
+^https:\/\/e\.dlife\.cn\/user\/loginMiddle url script-request-header dompling-index.js
+^https?:\/\/act\.10010\.com\/SigninApp\/signin\/querySigninActivity\.htm url script-request-header chavyleung-10010.cookie.js
+^https?:\/\/act\.10010\.com\/SigninApp(.*?)\/signin\/daySign url script-request-header chavyleung-10010.cookie.js
+^https?:\/\/m\.client\.10010\.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo) url script-request-header chavyleung-10010.cookie.js
+^https?:\/\/m\.client\.10010\.com\/serviceimportantbusiness\/smart\/smartwisdomCommonNew  url script-request-header dompling-index-5e4039.js
+;^http:\/\/wx.10086.cn\/website\/taskCenter\/index\? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js
+;^http:\/\/wx.10086.cn\/website\/taskCenter\/sign\? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js
+^https:\/\/.+zhuishushenqi\.com\/* url script-request-body XidNDD-zscdbSign.js
+^https:\/\/getconfig-globalapi\.zymk\.cn\/app_api\/* url script-request-body XidNDD-zymkSign.js
+^https:\/\/m\.ctrip\.com/restapi/soa2/14593/json/attendanceDay? url script-request-body chavyleung-zxhc.cookie.js
