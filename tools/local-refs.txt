@@ -1,42 +1,42 @@
 # ===== 以下为本地引用行（由 tools\build-local.ps1 生成，可直接替换 QuanX.conf 中的远程行） =====
-[filter_remote] filter-Google-bm7.snippet, tag=Google@bm7, force-policy=谷歌服务, enabled=true
-[rewrite_remote] rewrite-微博去广告-奶思.snippet, tag=微博去广告@奶思, enabled=true
-[rewrite_remote] rewrite-广告拦截合集-奶思.snippet, tag=广告拦截合集@奶思, enabled=true
-[filter_remote] filter-TikTok-bm7.snippet, tag=TikTok@bm7, force-policy=海外抖音, enabled=true
-[filter_remote] filter-Github-bm7.snippet, tag=Github@bm7, force-policy=proxy, enabled=true
-[filter_remote] filter-苹果屏蔽系统更新-奶思.snippet, tag=苹果屏蔽系统更新@奶思, enabled=false
-[filter_remote] filter-Twitter-奶思.snippet, tag=Twitter@奶思, force-policy=美国节点, enabled=true
-[filter_remote] filter-广告拦截合集-奶思.snippet, tag=广告拦截合集@奶思, enabled=true
-[rewrite_remote] rewrite-Sub-Store.snippet, tag=Sub-Store, enabled=true
-[rewrite_remote] rewrite-Script-Hub.snippet, tag=Script-Hub, enabled=true
-[filter_remote] filter-番茄小说分流2.snippet, tag=番茄小说分流2, force-policy=reject, enabled=false
-[rewrite_remote] rewrite-番茄小说VIP.snippet, tag=番茄小说VIP, enabled=false
-[filter_remote] filter-抖音IP-奶思.snippet, tag=抖音IP@奶思, force-policy=大陆抖音, enabled=true
-[rewrite_remote] rewrite-起点.snippet, tag=起点, enabled=false
-[filter_remote] filter-番茄小说.snippet, tag=番茄小说, enabled=true
-[filter_remote] filter-快手IP-奶思.snippet, tag=快手IP@奶思, force-policy=direct, enabled=true
 [filter_remote] filter-Spotify-bm7.snippet, tag=Spotify@bm7, enabled=true
-[rewrite_remote] rewrite-BoxJs.snippet, tag=BoxJs, enabled=true
-[filter_remote] filter-分流修正-奶思.snippet, tag=分流修正@奶思, enabled=true
-[rewrite_remote] rewrite-番茄小说.snippet, tag=番茄小说, enabled=true
-[filter_remote] filter-GeoIP_CN-奶思.snippet, tag=GeoIP_CN@奶思, force-policy=direct, enabled=true
+[filter_remote] filter-Google-bm7.snippet, tag=Google@bm7, force-policy=谷歌服务, enabled=true
 [filter_remote] filter-Talkatone-奶思.snippet, tag=Talkatone@奶思, force-policy=美国节点, enabled=true
-[filter_remote] filter-Telegram-bm7.snippet, tag=Telegram@bm7, force-policy=电报消息, enabled=true
-[rewrite_remote] rewrite-网上国网.snippet, tag=网上国网, enabled=false
-[filter_remote] filter-AI分流合集-奶思.snippet, tag=AI分流合集@奶思, force-policy=人工智能, enabled=true
+[filter_remote] filter-Twitter-奶思.snippet, tag=Twitter@奶思, force-policy=美国节点, enabled=true
 [filter_remote] filter-苹果服务-奶思.snippet, tag=苹果服务@奶思, force-policy=苹果服务, enabled=true
-[rewrite_remote] rewrite-获取cookie合集-奶思.snippet, tag=获取cookie合集@奶思, enabled=false
-[rewrite_remote] rewrite-Spotify音乐VIP-app2smile.snippet, tag=Spotify音乐VIP@app2smile, enabled=true
-[filter_remote] filter-小红书IP-奶思.snippet, tag=小红书IP@奶思, force-policy=direct, enabled=true
 [filter_remote] filter-番茄小说分流1.snippet, tag=番茄小说分流1, force-policy=reject, enabled=false
-[general] fmz200-server_location.js, tag=fmz200-server_location.js, enabled=true
-[general] KOP-XIAO-streaming-ui-check.js, tag=KOP-XIAO-streaming-ui-check.js, enabled=true
-[general] I-am-R-E-NodeLinkCheck.js, tag=I-am-R-E-NodeLinkCheck.js, enabled=true
-[http_backend] chavyleung-chavy.boxjs.js, tag=Boxjs, enabled=true
-[general] KOP-XIAO-resource-parser.js, tag=KOP-XIAO-resource-parser.js, enabled=true
-[general] KOP-XIAO-server-info-plus.js, tag=KOP-XIAO-server-info-plus.js, enabled=true
-[general] dompling-backup.js, tag=dompling-backup.js, enabled=true
-[general] fmz200-server_info.js, tag=fmz200-server_info.js, enabled=true
-[general] KOP-XIAO-traffic-check.js, tag=KOP-XIAO-traffic-check.js, enabled=true
-[general] getsomecat-Net_Speed.js, tag=getsomecat-Net_Speed.js, enabled=true
+[filter_remote] filter-番茄小说.snippet, tag=番茄小说, enabled=true
+[filter_remote] filter-抖音IP-奶思.snippet, tag=抖音IP@奶思, force-policy=大陆抖音, enabled=true
+[filter_remote] filter-小红书IP-奶思.snippet, tag=小红书IP@奶思, force-policy=direct, enabled=true
+[rewrite_remote] rewrite-获取cookie合集-奶思.snippet, tag=获取cookie合集@奶思, enabled=false
+[filter_remote] filter-AI分流合集-奶思.snippet, tag=AI分流合集@奶思, force-policy=人工智能, enabled=true
+[rewrite_remote] rewrite-广告拦截合集-奶思.snippet, tag=广告拦截合集@奶思, enabled=true
+[rewrite_remote] rewrite-Script-Hub.snippet, tag=Script-Hub, enabled=true
+[rewrite_remote] rewrite-Sub-Store.snippet, tag=Sub-Store, enabled=true
+[filter_remote] filter-快手IP-奶思.snippet, tag=快手IP@奶思, force-policy=direct, enabled=true
+[filter_remote] filter-番茄小说分流2.snippet, tag=番茄小说分流2, force-policy=reject, enabled=false
+[filter_remote] filter-Telegram-bm7.snippet, tag=Telegram@bm7, force-policy=电报消息, enabled=true
+[filter_remote] filter-苹果屏蔽系统更新-奶思.snippet, tag=苹果屏蔽系统更新@奶思, enabled=false
+[rewrite_remote] rewrite-微博去广告-奶思.snippet, tag=微博去广告@奶思, enabled=true
+[filter_remote] filter-TikTok-bm7.snippet, tag=TikTok@bm7, force-policy=海外抖音, enabled=true
+[filter_remote] filter-广告拦截合集-奶思.snippet, tag=广告拦截合集@奶思, enabled=true
+[rewrite_remote] rewrite-网上国网.snippet, tag=网上国网, enabled=false
+[rewrite_remote] rewrite-番茄小说.snippet, tag=番茄小说, enabled=true
+[filter_remote] filter-分流修正-奶思.snippet, tag=分流修正@奶思, enabled=true
+[rewrite_remote] rewrite-番茄小说VIP.snippet, tag=番茄小说VIP, enabled=false
+[rewrite_remote] rewrite-Spotify音乐VIP-app2smile.snippet, tag=Spotify音乐VIP@app2smile, enabled=true
+[rewrite_remote] rewrite-起点.snippet, tag=起点, enabled=false
+[rewrite_remote] rewrite-BoxJs.snippet, tag=BoxJs, enabled=true
+[filter_remote] filter-Github-bm7.snippet, tag=Github@bm7, force-policy=proxy, enabled=true
+[filter_remote] filter-GeoIP_CN-奶思.snippet, tag=GeoIP_CN@奶思, force-policy=direct, enabled=true
 [general] dompling-restore.js, tag=dompling-restore.js, enabled=true
+[general] dompling-backup.js, tag=dompling-backup.js, enabled=true
+[general] I-am-R-E-NodeLinkCheck.js, tag=I-am-R-E-NodeLinkCheck.js, enabled=true
+[general] getsomecat-Net_Speed.js, tag=getsomecat-Net_Speed.js, enabled=true
+[general] KOP-XIAO-traffic-check.js, tag=KOP-XIAO-traffic-check.js, enabled=true
+[general] fmz200-server_info.js, tag=fmz200-server_info.js, enabled=true
+[general] fmz200-server_location.js, tag=fmz200-server_location.js, enabled=true
+[general] KOP-XIAO-server-info-plus.js, tag=KOP-XIAO-server-info-plus.js, enabled=true
+[http_backend] chavyleung-chavy.boxjs.js, tag=Boxjs, enabled=true
+[general] KOP-XIAO-streaming-ui-check.js, tag=KOP-XIAO-streaming-ui-check.js, enabled=true
+[general] KOP-XIAO-resource-parser.js, tag=KOP-XIAO-resource-parser.js, enabled=true
